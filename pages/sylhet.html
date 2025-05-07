@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root{
+    --primary:#245953;
+    --dark:#263A29;
+    --dark-mid:#445C3C;
+    --white:#ffffff;
+    --pure:#A0C49D;
+    --light:#D4E2D4;
+    --superlight:#d9e9d9;
+    --light-nude:#B2E672;
+    --yellow:#F0A04B;
+}
+    body {
+      margin: 0;
+      
+      background-color: var(--dark);
+      padding: 0;
+      text-align: center;
+      
+    }
+
+    body h1{
+        color: var(--superlight);
+        font-size: 3rem;
+    }
+
+     .container2{
+        width: 80%;
+        
+        margin: 0 auto;
+        
+     }
+ 
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column1 {
+      flex-basis: calc(50% - 20px);
+      padding: 20px;
+      border-top-left-radius: 5%;
+      border-bottom-left-radius: 5%;
+      background-color: var(--superlight);
+      
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .column1 h2 {
+        color: var(--primary);
+
+      margin-top: 0;
+    }
+    .column1 img{
+        width: 100%;
+    }
+
+    .column1 p{
+        color: var(--dark-mid);
+    }
+    .column1 h3{
+        color: var(--dark-mid);
+    }
+
+    .column2 {
+      flex-basis: calc(50% - 20px);
+      padding: 2rem;
+      
+      border-top-right-radius: 5%;
+      border-bottom-right-radius: 5%;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .column2 h2 {
+      margin-top: 0;
+      color: var(--dark-mid);
+    }
+    .column2 p{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+    .column2 img{
+      width: 80%;
+      padding-left: 2rem;
+    }
+
+    .column2 .button{
+    background: var(--dark-mid);
+    color: white;
+    transition: all 0.6s ease;
+    font-weight: 500;
+    font-size: 2rem;
+    border-radius: 3%;
+    font-style: bold;
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+}
+
+.column2  .button:hover{
+    background: var(--pure);
+    color: var(--dark);
+    font-weight: 600;
+    border: none;
+}
+.column2 .date{
+         border-radius: 5%;
+         border-width: 0.5px;
+        
+    }
+    .column2 .time{
+        padding-top: 1rem;
+    }
+
+    .planbox{
+        padding-top: 3rem;
+    }
+   
+    .plans{
+        background-color: var(--superlight);
+        color: var(--dark-mid);
+        border-radius: 5%;
+        padding: 1rem;
+    }
+    .plans h3{
+        color: var(--dark);
+        padding-left: 1rem;
+    }
+    .column2 .form-select{
+        width: 2rem;
+    }
+    .column2 .submit{
+    
+    width: 160px;
+    font-size: 16px;
+    
+    border-radius: 10%;
+    font-weight: 550;
+    background: var(--dark-mid);
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.column2 .submit:hover{
+    width: 170px;
+}
+
+
+@media (max-width: 450px) {
+  .content-section {
+    flex-direction: column;
+    
+  }
+  
+  .column1 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+  }
+  .column2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+  }
+}
+  </style>
+  <title>Sylhet Booking</title>
+</head>
+<body>
+      <h1>
+        Sylhet
+      </h1>
+    <div class="container2">
+      <div class="content-section ">
+        <div class="column1">
+          <h2>Overview</h2>
+          <img src="/images/cox-overview.jpg" alt="">
+          <p> <h3>3 Days 4 Nights</h3> 
+            
+            Discover Sylhet, an enchanting corner of northeast Bangladesh. A tapestry of lush tea gardens, serene landscapes, and vibrant culture awaits. Explore the tea capital of Srimangal, immerse in Sylhet city's blend of tradition and modernity, and uncover natural gems like Ratargul Swamp Forest and Lalakhal. Sylhet invites you to experience the essence of Bangladesh's beauty and heritage.        <h3>Included</h3>
+         <p> 1. Assistance on Arrival & Departure <br>
+             2. Meals as per Hotel Plan <br>
+             3. Air conditioned accomodations <br>
+             4. Personal Guide
+         </p>
+         <h3>Excluded</h3>
+         <p> 1. Any personal expenses <br>
+             2. By-Air Transportation cost <br>
+             3. Home Pickup/Dropup services 
+             
+         </p>
+        </div>
+
+       <!-- Column 2 -->
+        <div class="column2 container2">
+          <h2>Book This Tour</h2>
+          <img src="/images/boooking.png" alt="">
+          <div class="flex container2">
+            From:
+            <input type="date" class="form-control date" placeholder="Arrivals" required><br>
+          </div>
+          <hr>
+          <div class=" flex time container2 ">
+            Time:
+            <div class="form-check">
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  8.00 AM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  10.00 AM
+                </label>
+              </div>
+          </div>
+
+          <hr>
+          
+          
+          <div class="Guest flex container2">
+            
+           
+           <div class="input-group mb-3">
+            Adults:
+            <input type="number" class="form-control container " id="exampleFormControlInput1" >
+          </div>
+          <br>
+          <div class="input-group mb-3">
+            Children:
+            <input type="number" class="form-control container " id="exampleFormControlInput1" >
+          </div>
+        </div>
+<hr>
+        <div class=" flex time container2 ">
+            Meet-Point:
+            <div class="form-check">
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Uttara
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Dhanmondi
+                </label>
+              </div>
+          </div>
+
+          <hr>
+          <div class="mb-3 flex container2">
+            Name:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Name..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            
+            Email:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control container " id="exampleFormControlInput1" placeholder="Email..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            Address:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Address..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            Contact:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Contact..">
+          </div>
+
+          <br>
+          <button class="button" type="button">Book</button>
+
+        </div>
+
+      </div>
+        
+     
+      
+    </div>
+   <!-- Day Plans -->
+    <div class="planbox container">
+        <div class="plans">
+            <h3> Day 1: Arrival and Tea Garden Serenity </h3>
+           
+            <ul>
+                <li>Arrive in Sylhet and check in to your chosen accommodation.</li>
+                <li>Start your journey with a visit to Srimangal, the "Tea Capital."</li>
+                <li>Wander through lush tea gardens, learning about the tea production process.</li>
+              <li>Visit the Lawachara National Park, home to diverse wildlife and beautiful trails.</li>
+              <li>Enjoy a traditional Sylheti dinner and immerse yourself in the local flavors.</li>
+            </ul>
+              <h3>  Day 2: Sylhet City and Spiritual Wonders </h3>
+           
+            
+            <ul>
+                <li>Depart for Sylhet city, a hub of cultural heritage and modernity.</li>
+                <li>Explore Shahjalal University of Science and Technology, known for its stunning architecture.</li>
+                <li>Visit Hazrat Shah Jalal Mazar and Hazrat Shah Paran Mazar, two revered Sufi shrines.</li>
+                 <li>Stroll through the bustling Zindabazar market, a vibrant center of trade.</li>
+            </ul>
+            
+            <h3>Day 3: Natural Gems and Departure</h3>
+            
+            
+            <ul>
+                <li>Begin your day with an early departure to Ratargul Swamp Forest.</li>
+                <li>Enjoy a serene boat ride through the mangrove forest, surrounded by tranquility.</li>
+                <li>Visit Lalakhal, renowned for its emerald waters and breathtaking landscapes.</li>
+                <li>Indulge in a farewell lunch by the river.</li>
+                <li>Depart from Sylhet, taking with you memories of its captivating landscapes and rich culture</li>
+              </ul>
+            
+            
+          </div>
+    </div>
+</body>
+</html>

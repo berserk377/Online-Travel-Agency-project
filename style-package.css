@@ -1,0 +1,234 @@
+
+		/* Reset some default browser styles */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* Custom variables */
+
+		:root {
+			--primary: #245953;
+			--dark: #263A29;
+			--dark-mid: #445C3C;
+			--white: #ffffff;
+			--pure: #A0C49D;
+			--light: #D4E2D4;
+			--superlight: #d9e9d9;
+			--light-nude: #B2E672;
+			--yellow: #F0A04B;
+		}
+
+		.button {
+			padding: 6px 24px;
+			border: 2px solid var(--dark-mid);
+			background: var(--dark-mid);
+			border-radius: 6px;
+			font-weight: 500;
+			color: var(--white);
+			cursor: pointer;
+		  }
+		  .button:active {
+			transform: scale(0.98);
+		  }
+		/* Style for the card container */
+		.pl-card {
+			display: flex;
+			align-items: center;
+			border-radius: 10px;
+			border: none;
+			height: auto;
+			background-color: var(--superlight);
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+			transition: all 0.6s ease;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+
+		.pl-card:hover {
+			background-color: var(--pure);
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 16px;
+			transform: translateY(-5px);
+		}
+
+		body {
+			background-color: var(--dark-mid);
+		}
+		
+
+		.pl-card img {
+			width: 380px;
+			height: 250px;
+
+			flex: 0 0 40%;
+			/* Adjust the width of the image section */
+			padding: 20px;
+		}
+
+		.pl-card .pl-card-body {
+			padding: 20px;
+			background: transparent;
+		}
+
+		.pl-card h3 {
+			font-size: 24px;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+
+		.pl-card .pl-card-details {
+			flex: 1;
+			height: 100%;
+			padding: 20px;
+			background-color: var(--superlight);
+		}
+
+		.pl-card p {
+			font-size: 14px;
+			margin-bottom: 5px;
+			color: #555;
+		}
+
+		.pl-card h6 {
+			font-size: 18px;
+			padding-bottom: 1rem;
+			margin-top: 1rem;
+		}
+
+		.packages-container {
+			display: grid;
+			padding-left: 5rem;
+			padding-right: 5rem;
+			grid-template-columns: repeat(2, 1fr);
+			/* Display 3 columns */
+			gap: 20px;
+			/* Gap between grid items */
+			margin-top: 20px;
+		}
+		@media (max-width: 450px) {
+			.packages-container{
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.pl-card {
+				display: flex;
+				align-items: center;
+				border-radius: 10px;
+				border: none;
+				height: auto;
+				background-color: var(--superlight);
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+				transition: all 0.6s ease;
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+		}
+
+		.pl-card a {
+			display: inline-block;
+			padding: 10px 20px;
+			text-decoration: none;
+			background: var(--dark);
+			color: white;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		.pl-card a:hover {
+			background-color: var(--dark-mid);
+			color: white;
+		}
+
+		/* Responsive styles for smaller screens */
+		@media screen and (max-width: 768px) {
+			.card {
+				margin-right: 0;
+			}
+		}
+
+
+		/* Navbar Start */
+		#navbar {
+			background: var(--dark);
+		}
+
+		.navbar li {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+
+		#logo {
+			font-size: 30px;
+
+			font-weight: 400;
+			color: var(--white);
+
+			margin-bottom: 5px;
+		}
+
+		.navbar .navbar-brand img {
+			width: 40px;
+			margin-bottom: 5px;
+		}
+
+		#logo span {
+			color: var(--light-nude);
+			padding-left: 1rem;
+		}
+
+		.navbar-toggler span {
+			color: var(--pure);
+		}
+
+		.navbar-nav {
+			margin-left: 20px;
+		}
+
+		.nav-item .nav-link {
+			font-size: 16px;
+			font-weight: 450;
+			color: var(--white);
+			letter-spacing: 1px;
+			border-radius: 3px;
+			transition: 0.5s ease;
+		}
+
+		.nav-item .nav-link:hover {
+
+			color: var(--dark-mid);
+		}
+
+		.nav-item .nav-link span.log:hover {
+
+			color: var(--primary);
+		}
+
+		.nav-item .nav-link span:hover {
+
+			color: var(--pure);
+		}
+
+		#navbar form button {
+			background: var(--dark-mid);
+			color: white;
+			font-weight: 600;
+			font-style: bold;
+
+			border: none;
+		}
+
+		#navbar form button:hover {
+			background: var(--pure);
+			color: var(--dark);
+			font-weight: 600;
+			border: none;
+		}
+
+		/* Navbar End */
+
+
+
+		
+		/* Style for the card container */
+		

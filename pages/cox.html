@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root{
+    --primary:#245953;
+    --dark:#263A29;
+    --dark-mid:#445C3C;
+    --white:#ffffff;
+    --pure:#A0C49D;
+    --light:#D4E2D4;
+    --superlight:#d9e9d9;
+    --light-nude:#B2E672;
+    --yellow:#F0A04B;
+}
+    body {
+      margin: 0;
+      
+      background-color: var(--dark);
+      padding: 0;
+      text-align: center;
+      
+    }
+
+    body h1{
+        color: var(--superlight);
+        font-size: 3rem;
+    }
+
+     .container2{
+        width: 80%;
+        
+        margin: 0 auto;
+        
+     }
+ 
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column1 {
+      flex-basis: calc(50% - 20px);
+      padding: 20px;
+      border-top-left-radius: 5%;
+      border-bottom-left-radius: 5%;
+      background-color: var(--superlight);
+      
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .column1 h2 {
+        color: var(--primary);
+
+      margin-top: 0;
+    }
+    .column1 img{
+        width: 100%;
+    }
+
+    .column1 p{
+        color: var(--dark-mid);
+    }
+    .column1 h3{
+        color: var(--dark-mid);
+    }
+
+    .column2 {
+      flex-basis: calc(50% - 20px);
+      padding: 2rem;
+      
+      border-top-right-radius: 5%;
+      border-bottom-right-radius: 5%;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .column2 h2 {
+      margin-top: 0;
+      color: var(--dark-mid);
+    }
+    .column2 p{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+    .column2 img{
+      width: 80%;
+      padding-left: 2rem;
+    }
+
+    .column2 .button{
+    background: var(--dark-mid);
+    color: white;
+    transition: all 0.6s ease;
+    font-weight: 500;
+    font-size: 2rem;
+    border-radius: 3%;
+    font-style: bold;
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+}
+
+.column2  .button:hover{
+    background: var(--pure);
+    color: var(--dark);
+    font-weight: 600;
+    border: none;
+}
+.column2 .date{
+         border-radius: 5%;
+         border-width: 0.5px;
+        
+    }
+    .column2 .time{
+        padding-top: 1rem;
+    }
+
+    .planbox{
+        padding-top: 3rem;
+    }
+   
+    .plans{
+        background-color: var(--superlight);
+        color: var(--dark-mid);
+        border-radius: 5%;
+        padding: 1rem;
+    }
+    .plans h3{
+        color: var(--dark);
+        padding-left: 1rem;
+    }
+    .column2 .form-select{
+        width: 2rem;
+    }
+    .column2 .submit{
+    
+    width: 160px;
+    font-size: 16px;
+    
+    border-radius: 10%;
+    font-weight: 550;
+    background: var(--dark-mid);
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.column2 .submit:hover{
+    width: 170px;
+}
+
+
+@media (max-width: 450px) {
+  .content-section {
+    flex-direction: column;
+    
+  }
+  
+  .column1 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+  }
+  .column2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+  }
+}
+  </style>
+  <title>Cox Booking</title>
+</head>
+<body>
+      <h1>
+        Cox Bazar
+      </h1>
+    <div class="container2">
+      <div class="content-section ">
+        <div class="column1">
+          <h2>Overview</h2>
+          <img src="/images/cox-overview.jpg" alt="">
+          <p> <h3>4 Days 5 Nights</h3> 
+            
+            Cox's Bazar, located on the southeastern coast of Bangladesh, is a picturesque and renowned destination that captivates travelers with its stunning natural beauty, expansive beaches, and rich cultural heritage. As the world's longest unbroken sandy beach, Cox's Bazar offers an idyllic escape for both relaxation and exploration.</p>
+         <h3>Included</h3>
+         <p> 1. Assistance on Arrival & Departure <br>
+             2. Meals as per Hotel Plan <br>
+             3. Air conditioned accomodations <br>
+             4. Personal Guide
+         </p>
+         <h3>Excluded</h3>
+         <p> 1. Any personal expenses <br>
+             2. By-Air Transportation cost <br>
+             3. Home Pickup/Dropup services 
+             
+         </p>
+        </div>
+
+       <!-- Column 2 -->
+        <div class="column2 container2">
+          <h2>Book This Tour</h2>
+          <img src="/images/boooking.png" alt="">
+          <div class="flex container2">
+            From:
+            <input type="date" class="form-control date" placeholder="Arrivals" required><br>
+          </div>
+          <hr>
+          <div class=" flex time container2 ">
+            Time:
+            <div class="form-check">
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  8.00 AM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  10.00 AM
+                </label>
+              </div>
+          </div>
+
+          <hr>
+          
+          
+          <div class="Guest flex container2">
+            
+           
+           <div class="input-group mb-3">
+            Adults:
+            <input type="number" class="form-control container " id="exampleFormControlInput1" >
+          </div>
+          <br>
+          <div class="input-group mb-3">
+            Children:
+            <input type="number" class="form-control container " id="exampleFormControlInput1" >
+          </div>
+        </div>
+<hr>
+        <div class=" flex time container2 ">
+            Meet-Point:
+            <div class="form-check">
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Uttara
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Dhanmondi
+                </label>
+              </div>
+          </div>
+
+          <hr>
+          <div class="mb-3 flex container2">
+            Name:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Name..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            
+            Email:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control container " id="exampleFormControlInput1" placeholder="Email..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            Address:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Address..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            Contact:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Contact..">
+          </div>
+
+          <br>
+          <button class="button" type="button">Book</button>
+
+        </div>
+
+      </div>
+        
+     
+      
+    </div>
+   <!-- Day Plans -->
+    <div class="planbox container">
+        <div class="plans">
+            <h3> Day 1: Arrival and Beach Bliss </h3>
+           
+            <ul>
+                <li>Arrive at Cox's Bazar and check into your chosen accommodation.</li>
+                <li>Spend the morning relaxing on the iconic Cox's Bazar Beach, sunbathing and enjoying the soothing waves.</li>
+                <li>Afternoon visit to Himchari National Park: Explore the park's walking trails, visit Himchari Waterfall, and marvel at the diverse flora and fauna.</li>
+              </ul>
+              <h3>  Day 2: Beach Activities and Cultural Exploration </h3>
+           
+            
+            <ul>
+                <li>Engage in water sports activities like parasailing, jet skiing, and banana boat rides.</li>
+                <li>Visit the Marine Aquarium and Fisheries Biology Center to learn about marine life and conservation efforts.</li>
+                <li>Afternoon exploration of Cox's Bazar town: Wander through local markets, try traditional Bangladeshi street food, and visit nearby Buddhist temples.</li>
+                 <li>Evening cultural performance: Enjoy a traditional dance or music performance showcasing local culture.</li>
+            </ul>
+            
+            <h3>Day 3: Inani Beach and Coastal Delights</h3>
+            
+            
+            <ul>
+                <li>Early morning departure to Inani Beach: Experience the pristine shores and indulge in beach photography.</li>
+                <li>Lunch with a view: Enjoy a beachside picnic with fresh seafood and local delicacies.</li>
+                <li>Optional boat ride: Explore nearby islands and coastal landmarks from the water.</li>
+              </ul>
+            
+            <h3>Day 4: Sunrise, Relaxation, and Departure</h3>
+            
+            
+            <ul>
+                <li>Wake up early to witness the sunrise over Cox's Bazar Beach – a truly magical sight.</li>
+                <li>Relax and unwind: Spend the day lounging on the beach, reading a book, or enjoying spa treatments at your hotel.</li>
+                <li>Farewell lunch: Savor your last meal in Cox's Bazar at a beachfront restaurant.</li>
+                 <li>Check out from your accommodation and depart with fond memories of your coastal retreat.</li>
+            </ul>
+          </div>
+    </div>
+</body>
+</html>

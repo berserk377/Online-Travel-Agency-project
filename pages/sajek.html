@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root{
+    --primary:#245953;
+    --dark:#263A29;
+    --dark-mid:#445C3C;
+    --white:#ffffff;
+    --pure:#A0C49D;
+    --light:#D4E2D4;
+    --superlight:#d9e9d9;
+    --light-nude:#B2E672;
+    --yellow:#F0A04B;
+}
+    body {
+      margin: 0;
+      
+      background-color: var(--dark);
+      padding: 0;
+      text-align: center;
+      
+    }
+
+    body h1{
+        color: var(--superlight);
+        font-size: 3rem;
+    }
+
+     .container2{
+        width: 80%;
+        
+        margin: 0 auto;
+        
+     }
+ 
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column1 {
+      flex-basis: calc(50% - 20px);
+      padding: 20px;
+      border-top-left-radius: 5%;
+      border-bottom-left-radius: 5%;
+      background-color: var(--superlight);
+      
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .column1 h2 {
+        color: var(--primary);
+
+      margin-top: 0;
+    }
+    .column1 img{
+        width: 100%;
+    }
+
+    .column1 p{
+        color: var(--dark-mid);
+    }
+    .column1 h3{
+        color: var(--dark-mid);
+    }
+
+    .column2 {
+      flex-basis: calc(50% - 20px);
+      padding: 2rem;
+      
+      border-top-right-radius: 5%;
+      border-bottom-right-radius: 5%;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .column2 h2 {
+      margin-top: 0;
+      color: var(--dark-mid);
+    }
+    .column2 p{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+    .column2 img{
+      width: 80%;
+      padding-left: 2rem;
+    }
+
+    .column2 .button{
+    background: var(--dark-mid);
+    color: white;
+    transition: all 0.6s ease;
+    font-weight: 500;
+    font-size: 2rem;
+    border-radius: 3%;
+    font-style: bold;
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+}
+
+.column2  .button:hover{
+    background: var(--pure);
+    color: var(--dark);
+    font-weight: 600;
+    border: none;
+}
+.column2 .date{
+         border-radius: 5%;
+         border-width: 0.5px;
+        
+    }
+    .column2 .time{
+        padding-top: 1rem;
+    }
+
+    .planbox{
+        padding-top: 3rem;
+    }
+   
+    .plans{
+        background-color: var(--superlight);
+        color: var(--dark-mid);
+        border-radius: 5%;
+        padding: 1rem;
+    }
+    .plans h3{
+        color: var(--dark);
+        padding-left: 1rem;
+    }
+    .column2 .form-select{
+        width: 2rem;
+    }
+    .column2 .submit{
+    
+    width: 160px;
+    font-size: 16px;
+    
+    border-radius: 10%;
+    font-weight: 550;
+    background: var(--dark-mid);
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.column2 .submit:hover{
+    width: 170px;
+}
+
+
+@media (max-width: 450px) {
+  .content-section {
+    flex-direction: column;
+    
+  }
+  
+  .column1 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+  }
+  .column2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+  }
+}
+  </style>
+  <title>Sajek Booking</title>
+</head>
+<body>
+      <h1>
+        SAJEK
+      </h1>
+    <div class="container2">
+      <div class="content-section ">
+        <div class="column1">
+          <h2>Overview</h2>
+          <img src="/images/cox-overview.jpg" alt="">
+          <p> <h3>3 Days 4 Nights</h3> 
+            
+            Discover Sajek Valley, an untouched gem nestled in Bangladesh's Chittagong Hill Tracts. Marvel at its panoramic hilltop views, lush landscapes, and winding rivers. Immerse yourself in the local culture of indigenous communities and explore pristine nature through invigorating treks. Sajek Valley offers an escape into untouched beauty and a chance to connect with the heart of Bangladesh's hill country.        <h3>Included</h3>
+         <p> 1. Assistance on Arrival & Departure <br>
+             2. Meals as per Hotel Plan <br>
+             3. Air conditioned accomodations <br>
+             4. Personal Guide
+         </p>
+         <h3>Excluded</h3>
+         <p> 1. Any personal expenses <br>
+             2. By-Air Transportation cost <br>
+             3. Home Pickup/Dropup services 
+             
+         </p>
+        </div>
+
+       <!-- Column 2 -->
+        <div class="column2 container2">
+          <h2>Book This Tour</h2>
+          <img src="/images/boooking.png" alt="">
+          <div class="flex container2">
+            From:
+            <input type="date" class="form-control date" placeholder="Arrivals" required><br>
+          </div>
+          <hr>
+          <div class=" flex time container2 ">
+            Time:
+            <div class="form-check">
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  8.00 AM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  10.00 AM
+                </label>
+              </div>
+          </div>
+
+          <hr>
+          
+          
+          <div class="Guest flex container2">
+            
+           
+           <div class="input-group mb-3">
+            Adults:
+            <input type="number" class="form-control container " id="exampleFormControlInput1" >
+          </div>
+          <br>
+          <div class="input-group mb-3">
+            Children:
+            <input type="number" class="form-control container " id="exampleFormControlInput1" >
+          </div>
+        </div>
+<hr>
+        <div class=" flex time container2 ">
+            Meet-Point:
+            <div class="form-check">
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Uttara
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Dhanmondi
+                </label>
+              </div>
+          </div>
+
+          <hr>
+          <div class="mb-3 flex container2">
+            Name:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Name..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            
+            Email:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control container " id="exampleFormControlInput1" placeholder="Email..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            Address:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Address..">
+          </div>
+          <br>
+          <div class="mb-3 flex container2">
+            Contact:
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control container " id="exampleFormControlInput1" placeholder="Contact..">
+          </div>
+
+          <br>
+          <button class="button" type="button">Book</button>
+
+        </div>
+
+      </div>
+        
+     
+      
+    </div>
+   <!-- Day Plans -->
+    <div class="planbox container">
+        <div class="plans">
+            <h3> Day 1: Arrival and Sajek Serenity </h3>
+           
+            <ul>
+                <li>Depart early for Sajek Valley, a hidden gem nestled in the Chittagong Hill Tracts.</li>
+                <li>Arrive at Sajek and check into your chosen accommodation</li>
+                <li>Immerse yourself in the mesmerizing beauty of Sajek: Take a leisurely walk to the Helipad viewpoint for a panoramic sunset over the hills.</li>
+                 <li>Savor a local dinner and engage in cultural exchanges with the indigenous community.</li>
+            </ul>
+              <h3>  Day 2: Exploring Nature's Wonders </h3>
+           
+            
+            <ul>
+                <li>Enjoy a hearty breakfast with local flavors.</li>
+                <li>Embark on a thrilling trek to Konglak Peak, offering breathtaking vistas of the valley's rolling hills and meandering rivers.</li>
+                <li>Visit the Sajek Tourist Complex and take a leisurely stroll through the indigenous villages to witness their unique way of life.</li>
+                 <li>As the sun sets, gather around a bonfire for a cozy evening under the starlit sky.</li>
+            </ul>
+            
+            <h3>Day 3: Farewell with Lasting Memories</h3>
+            
+            
+            <ul>
+                <li>Capture the sunrise over the valley from your accommodation.</li>
+                <li>After breakfast, explore the beauty of Sajek's nearby waterfalls, such as Ruilui Para or Konglak Para.</li>
+                <li>Indulge in a picnic lunch amidst nature's serenity.</li>
+                 <li>Depart from Sajek with cherished memories and a deeper connection to the natural world.</li>
+                <li>Return to your starting point, enriched by the wonders of Sajek Valley and the memories of your 3-day adventure.</li>
+                </ul>
+            
+            
+          </div>
+    </div>
+</body>
+</html>
